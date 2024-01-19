@@ -4,34 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CodeEditor</title>
-    <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
+    <link rel="stylesheet" href="/codeEditor/style.css">
+    
 </head>
 <body>
-    <section className="container">
-    <h1>Code Editor</h1>
-    <div className="editor">
-        <div className="left">
-            <label><i className='bx bxl-html5' ></i>HTMl</label>
+    <div className="container" 
+    style="background-color: #28c17e;
+    text-align: center;">
+    <h1 
+    style="font-weight: 600;
+    padding: 1rem;">
+    Code Editor</h1>
+    <div className="editor " 
+    style="background: #252744;
+    text-align: start;
+    display: flex;
+    padding: 1rem;">
+        <div className="left" 
+        style="flex-basis: 50%;
+        padding: 10px;">
+            <label><i className='bx bxl-html5' ></i><p>HTMl</p></label>
             <textarea onkeyup="run()" spellcheck="false" id="html-code">
 
             </textarea>
-            <label><i className='bx bxl-css3' ></i>CSS</label>
+            <label><i className='bx bxl-css3' ></i><p>CSS</p></label>
             <textarea onkeyup="run()" spellcheck="false" id="css-code">
                 
             </textarea >
-            <label><i className='bx bxl-javascript' ></i>JavaScript</label>
+            <label><i className='bx bxl-javascript' ></i><p>JavaScript</p></label>
             <textarea onkeyup="run()" spellcheck="false" id="js-code">
                 
             </textarea>
         </div>
-        <div className="right">
-            <label><i className='bx bx-play' ></i>Output</label>
+        <div className="right" 
+        style="flex-basis: 50%;
+        padding: 10px;">
+            <label><i className='bx bx-play' ></i><p>Output</p></label>
             <iframe id="output"></iframe>
         </div>
     </div> 
-</section>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>

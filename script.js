@@ -6,6 +6,3 @@ function run(){
     output.contentDocument.body.innerHTML=htmlcode.value+"<style>"+csscode.value+"</style>";
     output.contentWindow.eval(jscode.value);
 }
-// let text = "Hello Dolly";
-// document.getElementById("myP").innerHTML = text;
-// document.getElementById("myDIV").innerHTML = text;
